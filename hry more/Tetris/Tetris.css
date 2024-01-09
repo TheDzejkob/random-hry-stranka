@@ -1,0 +1,30 @@
+/* Add your existing styles here */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.tetris-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-template-rows: repeat(20, 30px);
+    gap: 1px;
+    border: 1px solid #ccc;
+}
+
+.tetris-grid div {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+}
+
+.tetris-grid div.active {
+    background-color: #3494e6;
+}
+
+.tetris-grid div.taken {
+    background-color: #d00a0a;
+}
